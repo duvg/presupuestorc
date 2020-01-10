@@ -27,12 +27,7 @@ function App() {
       guardarCrearGasto(false);
     }
 
-    if(eliminarGasto) {
-      const listadoGastos = [...gastos, gasto];
-      guardarGastos(listadoGastos);
-
-    }
-
+   
     
   }, [crearGasto]);
 
