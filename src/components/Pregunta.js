@@ -3,7 +3,7 @@ import Error from './Error';
 
 function Pregunta (props) {
 
-    const { guardarPresupuesto, guardarPreguntaPresupuesto } = props;
+    const { guardarPresupuesto, guardarPreguntaPresupuesto, guardarRestante } = props;
 
     // Definicion del state
     const [ cantidad, guardarCantidad ] = useState(0);
@@ -22,6 +22,7 @@ function Pregunta (props) {
         // Validacion correcta
         guardarError(false);
         guardarPresupuesto(cantidad);
+        guardarRestante(cantidad);
         guardarPreguntaPresupuesto(false);
     }
     return(
